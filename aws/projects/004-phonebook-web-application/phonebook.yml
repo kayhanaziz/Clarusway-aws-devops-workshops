@@ -140,36 +140,13 @@ Resources:
         - !Ref RDSSecurityGroup
       MaxAllocatedStorage: 25
 
-
-
-
   RDSSecurityGroup:
     Type: "AWS::RDS::DBSecurityGroup"
     Properties:
       DBSecurityGroupIngress: #required
         - CIDRIP: 0.0.0.0/0
       GroupDescription: 'DataBaseSecurityGroup' #required
-      
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-    
 Outputs:
   URL:
     Description: The URL of the website
